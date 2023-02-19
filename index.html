@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Linkedin</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
+</head>
+
+<body class="body container">
+  <!-- navbar -->
+  <nav class="fixed-top bg-light navbar navbar-expand-lg navbar-light navbarbg">
+    <div class="container text-center">
+      <a class="navbar-brand" href="#"><i class="fab fa-linkedin fa-lg"
+          style="color: #0a66c2; font-size: 2.4rem"></i></a>
+
+      <form class="form-inline">
+
+        <div class="input-group">
+          <div class="input-group-append">
+            <span class="input-group-text">
+              <i class="fas fa-search"></i>
+            </span>
+          </div>
+          <input type="text" class="form-control" placeholder="Arama yapmak için buraya yazın...">
+
+        </div>
+
+
+      </form>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto ml-4">
+          <div class="d-flex justify-content-center">
+            <li class="nav-item active mr-3">
+              <a class="nav-link" href="#"><i class="fas fa-home fa-lg" style="color: black">
+                  <div class="menutext" style="color: black">Ana Sayfa</div>
+                </i>
+              </a>
+            </li>
+            <li class="nav-item active mr-4">
+              <a class="nav-link" href="#"><i class="fas fa-user-friends fa-lg">
+                  <div class="menutext">Ağım</div>
+                </i>
+              </a>
+            </li>
+            <li class="nav-item active mr-2">
+              <a class="nav-link" href="#"><i class="fas fa-briefcase fa-lg">
+                  <div class="menutext">İş İlanları</div>
+                </i>
+              </a>
+            </li>
+            <li class="nav-item active mr-1">
+              <a class="nav-link" href="#"><i class="fas fa-comment-dots fa-lg">
+                  <div class="menutext">Mesajlaşma</div>
+                </i>
+              </a>
+            </li>
+            <li class="nav-item active mr-1">
+              <a class="nav-link" href="#"><i class="fas fa-bell fa-lg">
+                  <div class="menutext">Bildirimler</div>
+                </i>
+              </a>
+            </li>
+            <li class="nav-item dropdown mt-1 mr-3 ml-3">
+              <div class="dropdown">
+                <img src="https://www.w3schools.com/howto/img_avatar.png" class="rounded-circle"
+                  style="width: 1.2rem; height:1.2rem;" />
+                <div class=" dropdown-toggle menutext" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Ben
+                </div>
+
+                <ul class="dropdown-menu dropdown-animation dropdown-menu-end pt-3 small me-md-n3 show"
+                  aria-labelledby="profileDropdown" data-bs-popper="none">
+                  <!-- Profile info -->
+                  <li class="px-3">
+                    <div class="d-flex align-items-center">
+                      <!-- Avatar -->
+                      <div class="avatar">
+                        <img class="avatar-img rounded-circle" src="https://www.w3schools.com/howto/img_avatar.png"
+                          alt="avatar" style="width: 3.4rem; height:3.4rem;">
+                      </div>
+                      <div style="margin-left: 0.4rem;">
+                        <a class="h6 stretched-link" href="#">Your Name</a>
+                        <p class="small m-0">Web Developer</p>
+                      </div>
+                    </div>
+
+                  </li>
+                  <b class="position-relative" style="left:1rem;">Hesap</b>
+                  <!-- Links -->
+                  <li><a class="dropdown-item" href="#">Ayarlar ve Gizlilik</a></li>
+                  <li><a class="dropdown-item" href="#">Yardım</a></li>
+                  <li><a class="dropdown-item" href="#">Dil</a></li>
+                  <li class="dropdown-divider"></li>
+                  <b class="position-relative" style="left:1rem;">Yönet</b>
+                  <li><a class="dropdown-item" href="#">Gönderi ve Faaliyetler</a></li>
+                  <li><a class="dropdown-item" href="#">İş İlanı Yaynlama Hesabı</a></li>
+                  <li><a class="dropdown-item" href="#">Dil</a></li>
+                  <hr class="dropdown-divider">
+            </li>
+            <!-- Dark mode switch START -->
+            <li><a class="dropdown-item" href="#">Oturumu Kapat</a></li>
+            <!-- Dark mode switch END -->
+        </ul>
+      </div>
+      </li>
+      <li class="nav-item active border-left">
+        <a class="nav-link ml-4 mr-2" href="#"><i class="fas fa-th fa-lg">
+            <div class="menutext">İş</div>
+          </i>
+        </a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#"><i class="fas fa-chalkboard fa-lg">
+            <div class="menutext">İş İlanı Yayınla</div>
+          </i>
+        </a>
+      </li>
+    </div>
+    </ul>
+    </div>
+    </div>
+  </nav>
+
+  <div>
+    <div class="row d-flex">
+      <!-- sol panel -->
+      <div class="col-md-12 col-lg-3 order-md-1 justify-content-center align-items-center">
+
+        <div class="card">
+          <div class="card-header d-flex justify-content-center mb-4" style=" background-image:
+            url(https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fblogs-images.forbes.com%2Falejandrocremades%2Ffiles%2F2018%2F12%2Fbusiness-3605367_1920-1200x741.jpg);
+            height: 53px;background-position: center;background-size: cover; ">
+            <img src=" https://www.w3schools.com/howto/img_avatar.png" class="rounded-circle " style=" width:
+              70px; height: 70px;" />
+          </div>
+          <div class=" card-body text-center">
+            <p class=" card-title header">
+              <a href=" https://www.linkedin.com/in/cengizcmataraci/" target="_blank" style="color: #212529;">
+                Your Name</a>
+            </p>
+            <div style="
+                  margin-bottom: 10px;
+                  color: #5f5f5f;
+                ">
+              Software Developer at Navlungo - Dijital Lojistik Platformu
+            </div>
+            <hr />
+            <div class="card-text">
+              <div class="d-flex justify-content-center  align-items-center">
+                <span class=" view" style="margin-right: 1rem;">Profilinizi kimler görüntüledi </span><span
+                  class="float-right view mt-1" style="color: #0a66c2">447</span>
+              </div>
+              <div class="d-flex justify-content-center  align-items-center">
+                <span class=" view" style="margin-right: 1rem;">Yayınınız için görüntüleme </span><span
+                  class="float-right view mt-1" style="color: #0a66c2">150</span>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer ">
+            <i class="fas fa-bookmark"></i><span class="mb-4"> Ögelerim</span>
+          </div>
+        </div>
+        <div class="card mt-2 p-3">
+          <div class="card-header" style="margin-bottom: -22px; font-size: 18px">
+            Sayfalarım
+          </div>
+          <div class="card-body mt-3">
+            <div class="card-title">
+              <img src="https://avatars.githubusercontent.com/u/77673807?v=4" style="width: 32px; height: 32px" />
+              <div style="
+                    font-size: 15px;
+                    font-weight: bold;
+                    margin-top: -35px;
+                    margin-left: 37px;
+                  ">
+                Kablosuz Beyin
+              </div>
+              <div class="" style="
+                    font-size: 13px;
+                    font-weight: bold;
+                    color: gray;
+                    margin-left: 38px;
+                  ">
+                Sayfa Bildirimleri
+                <span class="" style="color: #0a66c2">10</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mt-2 mb-5">
+          <div class="card-header bg-white border-0" style="font-size: 12px">
+            En Yeni
+          </div>
+          <div class="card-body">
+            <div class="card-title">
+              <div>
+                <i class="fas fa-hashtag" style="font-size: 13px; font-weight: bold"></i><span
+                  class="ml-2 font-weight-bold" style="font-size: 13px; color: #5f5f5f">kodluyoruz</span>
+              </div>
+              <div>
+                <i class="fas fa-hashtag" style="font-size: 13px; font-weight: bold"></i><span
+                  class="ml-2 font-weight-bold" style="font-size: 13px; color: #5f5f5f">front-end</span>
+              </div>
+              <div>
+                <i class="fas fa-hashtag" style="font-size: 13px; font-weight: bold"></i><span
+                  class="ml-2 font-weight-bold" style="font-size: 13px; color: #5f5f5f">html</span>
+              </div>
+              <div>
+                <i class="fas fa-hashtag" style="font-size: 13px; font-weight: bold"></i><span
+                  class="ml-2 font-weight-bold" style="font-size: 13px; color: #5f5f5f">css</span>
+              </div>
+              <div>
+                <i class="fas fa-hashtag" style="font-size: 13px; font-weight: bold"></i><span
+                  class="ml-2 font-weight-bold" style="font-size: 13px; color: #5f5f5f">bootstrap</span>
+              </div>
+              <div class="mt-3 categories">Gruplar</div>
+              <span class="mt-2 categories">Etkinlikler</span>
+              <span class="float-right mb-5" style="font-size: 23px; color: #5f5f5f">+</span>
+              <div class="mt-3 mb-1 categories">Takip edilen hashtagler</div>
+              <div>
+                <i class="fas fa-hashtag" style="font-size: 13px; font-weight: bold"></i><span
+                  class="ml-2 font-weight-bold" style="font-size: 13px; color: #5f5f5f">kodluyoruz</span>
+              </div>
+              <div>
+                <i class="fas fa-hashtag" style="font-size: 13px; font-weight: bold"></i><span
+                  class="ml-2 font-weight-bold" style="font-size: 13px; color: #5f5f5f">front-end</span>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            Daha fazla keşfet
+          </div>
+        </div>
+      </div>
+
+      <!-- orta panel -->
+      <div class="col-md-12 col-lg-6 order-md-2">
+        <div class="card">
+          <div class="card-body">
+            <div class="input-icon">
+              <input type="text" class="form-control content mb-2" placeholder="Bir gönderi başlat" />
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" width="24"
+                height="24" focusable="false">
+                <path
+                  d="M19 4H5a3 3 0 00-3 3v10a3 3 0 003 3h14a3 3 0 003-3V7a3 3 0 00-3-3zm1 13a1 1 0 01-.29.71L16 14l-2 2-6-6-4 4V7a1 1 0 011-1h14a1 1 0 011 1zm-2-7a2 2 0 11-2-2 2 2 0 012 2z" />
+              </svg>
+            </div>
+
+
+
+            <div class="d-flex justify-content-center">
+              <span><button class="mediatext">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" width="24"
+                    height="24" focusable="false">
+                    <path
+                      d="M19 4H5a3 3 0 00-3 3v10a3 3 0 003 3h14a3 3 0 003-3V7a3 3 0 00-3-3zm1 13a1 1 0 01-.29.71L16 14l-2 2-6-6-4 4V7a1 1 0 011-1h14a1 1 0 011 1zm-2-7a2 2 0 11-2-2 2 2 0 012 2z">
+                    </path>
+                  </svg><span class="ml-1 mediatext">Fotoğraf</span>
+                </button></span>
+              <span><button class="mediatext">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" width="24"
+                    height="24" focusable="false">
+                    <path d="M19 4H5a3 3 0 00-3 3v10a3 3 0 003 3h14a3 3 0 003-3V7a3 3 0 00-3-3zm-9 12V8l6 4z"></path>
+                  </svg><span class="ml-1 mediatext">Video</span>
+                </button></span>
+              <span><button class="mediatext">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" width="24"
+                    height="24" focusable="false">
+                    <path
+                      d="M3 3v15a3 3 0 003 3h12a3 3 0 003-3V3zm13 1.75A1.25 1.25 0 1114.75 6 1.25 1.25 0 0116 4.75zm-8 0A1.25 1.25 0 116.75 6 1.25 1.25 0 018 4.75zM19 18a1 1 0 01-1 1H6a1 1 0 01-1-1V9h14zm-5.9-3a1 1 0 00-1-1H12a3.12 3.12 0 00-1 .2l-1-.2v-3h3.9v1H11v1.15a3.7 3.7 0 011.05-.15 1.89 1.89 0 012 1.78V15a1.92 1.92 0 01-1.84 2H12a1.88 1.88 0 01-2-1.75 1 1 0 010-.25h1a.89.89 0 001 1h.1a.94.94 0 001-.88z">
+                    </path>
+                  </svg><span class="ml-1 mediatext">Etkinlik</span>
+                </button></span>
+              <span><button class="mediatext">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill=""
+                    width="24" height="24" focusable="false">
+                    <path d="M21 3v2H3V3zm-6 6h6V7h-6zm0 4h6v-2h-6zm0 4h6v-2h-6zM3 21h18v-2H3zM13 7H3v10h10z"></path>
+                  </svg><span class="ml-1 mediatext">Yazı yaz</span>
+                </button></span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <hr />
+        </div>
+        <div class="card p-1">
+          <div class="card-header">
+            <span>
+              <img src="https://www.w3schools.com/w3images/avatar2.png" class="postphoto">
+              <span class="posttext" style="position: relative;bottom:0.9rem;"><a
+                  href="https://www.linkedin.com/in/malan/" target="_blank" style="color: #212529;">David J.
+                  Malan</a></span>
+              <span class="float-right">
+                <i class="fas fa-ellipsis-h fa-md"></i>
+              </span>
+              <span class="d-flex flex-column" style="width:5rem;position: relative;left:4rem;bottom:2rem">
+                <span class="d-flex"
+                  style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 13px; color: #474747;">I
+                  teach CS50</span>
+                <span class="d-flex"
+                  style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 13px; color: #474747;">25a
+                  <i class="fas fa-globe-americas fa-sm"></i></span>
+              </span>
+          </div>
+          <div>
+            <p class="card-text ml-3"
+              style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 15px; color: black;">
+              They have done great things! Tebrikler Kodluyoruz!
+            </p>
+            <div>
+              <img src="https://pbs.twimg.com/media/Em2_xBbXUAEVDx1.jpg" class="card-img-top mb-1" alt="..." />
+            </div>
+            <span class=""><img src="https://static-exp1.licdn.com/sc/h/d310t2g24pvdy4pt1jkedo4yb" alt=""></span>
+            <span class=""><img src="https://static-exp1.licdn.com/sc/h/5thsbmikm6a8uov24ygwd914f" alt=""></span>
+            <span class=""
+              style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 13px; color: #474747;"><img
+                src="https://static-exp1.licdn.com/sc/h/7fx9nkd7mx8avdpqm5hqcbi97" alt=""> 958</span>
+            <div class="card-footer bg-white mt-1 d-flex justify-content-center">
+              <span><button class="ref mediatext">
+                  <i class="far fa-thumbs-up fa-md" style="font-size: 1.2rem"><span
+                      class="ml-2 mediatext">Beğen</span></i>
+                </button></span>
+              <span><button class="ref mediatext">
+                  <i class="far fa-comment fa-md" style="font-size: 1.2rem"><span class="ml-2 mediatext">Yorum
+                    </span></i>
+                </button></span>
+              <span><button class="ref mediatext">
+                  <i class="fas fa-share fa-md" style="font-size: 1.2rem"><span class="ml-2 mediatext">Paylaş</span></i>
+                </button></span>
+              <span><button class="ref mediatext">
+                  <i class="fas fa-paper-plane fa-md" style="font-size: 1.2rem"><span
+                      class="ml-2 mediatext">Gönder</span></i>
+                </button></span>
+            </div>
+          </div>
+        </div>
+        <div class="card mt-2">
+          <div class="card-header">
+            <span>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuoovVYEMl5PlyrnrmjPY_0bH_k0RaXYByiMVOWeEhWeG9wxWP2ozVw0Ab51hiQzxErpo&usqp=CAU"
+                class="postphoto">
+              <span class="posttext position-relative" style="bottom: 1rem;"><a
+                  href="https://www.linkedin.com/in/ozanhalis/" target="_blank" style="color: #212529;">Ozan Halis
+                  İLTER</a></span>
+              <span class="float-right">
+                <i class="fas fa-ellipsis-h fa-md"></i>
+              </span>
+              <div class="position-relative" style="bottom:2.2rem;left:4rem;">
+                <span
+                  style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 13px; color: #474747;">Team
+                  Leader at YetGen | CodeCraft | Kablosuz Beyin | IEEE MEF...</span><br>
+                <span class=""
+                  style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 13px; color: #474747;">1s
+                  <i class="fas fa-globe-americas fa-sm"></i></span>
+              </div>
+          </div>
+          <div>
+            <p class="card-text ml-3"
+              style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 15px; color: black;">
+              Erhan Erkut hocamız ile birlikte YetGen'de harika şeyler yapmak için geliyoruz!
+            </p>
+            <div>
+              <img src="https://miro.medium.com/max/1080/1*gdDWFSvHDt57DS2zsh_0Bg.png" class="card-img-top mb-1"
+                alt="..." />
+            </div>
+            <span class=""><img src="https://static-exp1.licdn.com/sc/h/d310t2g24pvdy4pt1jkedo4yb" alt=""></span>
+            <span class=""><img src="https://static-exp1.licdn.com/sc/h/5thsbmikm6a8uov24ygwd914f" alt=""></span>
+            <span class=""
+              style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 13px; color: #474747;"><img
+                src="https://static-exp1.licdn.com/sc/h/7fx9nkd7mx8avdpqm5hqcbi97" alt=""> 210</span>
+            <div class="card-footer bg-white mt-1 d-flex justify-content-center">
+              <span><button class="ref mediatext">
+                  <i class="far fa-thumbs-up fa-md" style="font-size: 1.2rem"><span
+                      class="ml-2 mediatext">Beğen</span></i>
+                </button></span>
+              <span><button class="ref mediatext">
+                  <i class="far fa-comment fa-md" style="font-size: 1.2rem"><span class="ml-2 mediatext">Yorum
+                    </span></i>
+                </button></span>
+              <span><button class="ref mediatext">
+                  <i class="fas fa-share fa-md" style="font-size: 1.2rem"><span class="ml-2 mediatext">Paylaş</span></i>
+                </button></span>
+              <span><button class="ref mediatext">
+                  <i class="fas fa-paper-plane fa-md" style="font-size: 1.2rem"><span
+                      class="ml-2 mediatext">Gönder</span></i>
+                </button></span>
+            </div>
+          </div>
+        </div>
+        <div class="card mt-2">
+          <div class="card-header bg-white border-0">
+            <span>
+              <img
+                src="data:image/jpeg;base64,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"
+                class="postphoto">
+              <span class="posttext position-relative" style="bottom: 1rem;"><a
+                  href="https://www.linkedin.com/in/ozanhalis/" target="_blank" style="color: #212529;">Mia
+                  MEOW</a></span>
+              <span class="float-right">
+                <i class="fas fa-ellipsis-h fa-md"></i>
+              </span>
+              <div class="position-relative" style="bottom:2.2rem;left:4rem;">
+                <span
+                  style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 13px; color: #474747;">Team
+                  Yazılımcı Patiler</span><br>
+                <span class=""
+                  style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 13px; color: #474747;">1s
+                  <i class="fas fa-globe-americas fa-sm"></i></span>
+              </div>
+          </div>
+          <div>
+            <p class="card-text ml-3"
+              style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 15px; color: #212529;">
+              Cat Özel Harekat'a katılmak isteyenleri şöyle alalım..
+            </p>
+            <div>
+              <img src="https://cdn.artigercek.com/news/166436.jpg" class="card-img-top mb-1" alt="..." />
+            </div>
+            <span class=""><img src="https://static-exp1.licdn.com/sc/h/d310t2g24pvdy4pt1jkedo4yb" alt=""></span>
+            <span class=""><img src="https://static-exp1.licdn.com/sc/h/5thsbmikm6a8uov24ygwd914f" alt=""></span>
+            <span class=""
+              style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 13px; color: #474747;"><img
+                src="https://static-exp1.licdn.com/sc/h/7fx9nkd7mx8avdpqm5hqcbi97" alt=""> 224</span>
+            <div class="card-footer bg-white mt-1 d-flex justify-content-center">
+              <span><button class="ref mediatext">
+                  <i class="far fa-thumbs-up fa-md" style="font-size: 1.2rem"><span
+                      class="ml-2 mediatext">Beğen</span></i>
+                </button></span>
+              <span><button class="ref mediatext">
+                  <i class="far fa-comment fa-md" style="font-size: 1.2rem"><span class="ml-2 mediatext">Yorum
+                    </span></i>
+                </button></span>
+              <span><button class="ref mediatext">
+                  <i class="fas fa-share fa-md" style="font-size: 1.2rem"><span class="ml-2 mediatext">Paylaş</span></i>
+                </button></span>
+              <span><button class="ref mediatext">
+                  <i class="fas fa-paper-plane fa-md" style="font-size: 1.2rem"><span
+                      class="ml-2 mediatext">Gönder</span></i>
+                </button></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- sağ panel -->
+      <div class="col-md-12 col-lg-3 order-md-3">
+        <div class="card">
+          <div class="card-header bg-white border-0">
+            <span>Akışınıza ekleyin</span><span><i class="fas fa-info-circle float-right"></i></span>
+          </div>
+          <div class="card-title">
+            <div class="ml-3">
+              <img src="https://cdn.artigercek.com/news/166436.jpg"
+                style="width: 50px; height: 50px; border-radius: 50%" />
+              <div class="header ml-1 position-relative" style="bottom:2.2rem;left:3rem;font-size: 0.8rem">Codecraft
+              </div>
+              <span class="float-right mr-3 mt-2 position-relative" style="bottom: 4rem;"><button
+                  class="border border-primary text-primary" style="border-radius: 50px">
+                  <strong>+ Takip Et</strong>
+                </button></span>
+            </div>
+          </div>
+          <div class="card-title">
+            <div class="ml-3">
+              <img src="https://cdn.artigercek.com/news/166436.jpg"
+                style="width: 50px; height: 50px; border-radius: 50%" />
+              <div class="header ml-1 position-relative" style="bottom:2.2rem;left:3rem;font-size: 0.8rem">Podfresh
+              </div>
+              <span class="float-right mr-3 mt-2 position-relative" style="bottom: 4rem;"><button
+                  class="border border-primary text-primary" style="border-radius: 50px">
+                  <strong>+ Takip Et</strong>
+                </button></span>
+            </div>
+          </div>
+          <div class="card-title">
+            <div class="ml-3">
+              <img src="https://cdn.artigercek.com/news/166436.jpg"
+                style="width: 50px; height: 50px; border-radius: 50%" />
+              <div class="header ml-1 position-relative" style="bottom:2.2rem;left:3rem;font-size: 0.8rem">Navlungo
+              </div>
+              <span class="float-right mr-3 mt-2 position-relative" style="bottom: 4rem;"><button
+                  class="border border-primary text-primary" style="border-radius: 50px">
+                  <strong>+ Takip Et</strong>
+                </button></span>
+            </div>
+          </div>
+          <div class="card-footer bg-white border-0" style="font-size: 14px; color: #0a66c2">
+            <strong></strong>
+          </div>
+        </div>
+        <div class="card mt-2" style="">
+          <div class="card-header bg-white border-0">
+            <span>Bugünün en çok izlenen eğitimleri</span><span><i class="fas fa-info-circle float-right"></i></span>
+          </div>
+          <div class="card-title">
+            <ol>
+              <li>
+                The Six Morning Habits of High Perf...
+                <div style="
+                      font-weight: lighter;
+                      font-size: 13px;
+                      color: #5f5f5f;
+                    ">
+                  Pete Mocakatais | How to be awesome at you...
+                </div>
+              </li>
+              <li class="mt-2">
+                Onconscious Blas
+                <div style="
+                      font-weight: lighter;
+                      font-size: 13px;
+                      color: #5f5f5f;
+                    ">
+                  Stacey Gordon
+                </div>
+              </li>
+              <li class="mt-2">
+                Critical Thinking for Better Judgme...
+                <div style="
+                      font-weight: lighter;
+                      font-size: 13px;
+                      color: #5f5f5f;
+                    ">
+                  Becki Saltzman
+                </div>
+              </li>
+            </ol>
+          </div>
+          <div class="card-footer" style="color: #0a66c2; font-size: 15px; margin-top: -25px">
+            Linkedin Learning'de daha fazlasını göster
+          </div>
+        </div>
+        <div class="text-center mt-3 ml-3" style="">
+          <div><a href="https://about.linkedin.com/" class="link mr-3">Hakkında</a></div>
+          <div><a
+              href="https://www.linkedin.com/accessibility?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BT6H7rzDzR%2FSQEvO%2BuBKdSw%3D%3D&licu=urn%3Ali%3Acontrol%3Ad_flagship3_feed-compactfooter.accessibility"
+              class="link mr-3">Erişilebilirlik</a></div>
+          <div><a
+              href="https://www.linkedin.com/help/linkedin?trk=footer_d_flagship3_feed&lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BT6H7rzDzR%2FSQEvO%2BuBKdSw%3D%3D&licu=urn%3Ali%3Acontrol%3Ad_flagship3_feed-compactfooter.help"
+              class="link">Yardım Merkezi</a></div>
+          <div><a href="" class="link mr-3">Gizlilik ve Koşullar</a></div>
+          <div><a
+              href="https://www.linkedin.com/help/linkedin/answer/62931?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BT6H7rzDzR%2FSQEvO%2BuBKdSw%3D%3D&licu=urn%3Ali%3Acontrol%3Ad_flagship3_feed-compactfooter.ad_choices"
+              class="link">Reklam Tercihleri</a></div>
+          <div><a
+              href="https://www.linkedin.com/ad/start?trk=n_nav_ads_rr&lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BT6H7rzDzR%2FSQEvO%2BuBKdSw%3D%3D&licu=urn%3Ali%3Acontrol%3Ad_flagship3_feed-compactfooter.advertising"
+              class="link">Reklam</a></div>
+          <div class="text-center" style="margin-top: 10px">
+            <img src="https://www.logo.wine/a/logo/LinkedIn/LinkedIn-Logo.wine.svg" width="90px" height="20px" /><span
+              style="font-size: 12px; margin-left: -15px">Linkedin Corporation © 2021</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- mesajlaşma -->
+  <nav class="d-flex p-2 navbar navbar-expand-xl navbar-light bg-white position-sticky fixed-bottom border"
+    style="height: 50px; width: 300px; position: -webkit-sticky; border-radius: 5px; margin-left: auto; right: 15px;">
+    <span class="container d-flex flex-row justify-content-center flex-wrap" style="width: 40rem;"><a
+        class="navbar-brand ml-0" href="#"><img src="https://www.w3schools.com/howto/img_avatar.png"
+          style="width: 30px; height: 30px; border-radius: 50%;" /></a>
+      <span
+        style="font-size: 14px; font-weight: bold; font-family:Arial, Helvetica, sans-serif;"><strong>Mesajlaşma</strong></span>
+      <span class="offset-3"><img src="./assets/edit-regular.svg" width="15px" height="15px"></span>
+      <span><i class="fas fa-chevron-up fa-sm ml-3"></i></span></span>
+  </nav>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
